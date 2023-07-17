@@ -1,0 +1,31 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="navbar-brand ml-4" href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="logo" ></a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" href="{% url 'products:list' %}">products</a>
+      </li> 
+      <li class="nav-item">
+        <a class="navbar-brand" href="{% url 'products-class:list' %}">products class</a>
+      </li> 
+
+     
+    </ul>
+
+   
+   
+  </div>   <!-- collapse end -->
+</nav>
+<style>
+  .small-text {
+  font-size: 7px;
+}
+
+</style>
